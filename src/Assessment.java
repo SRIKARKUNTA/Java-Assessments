@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Assessment {
     public static void main(String[] args) {
         System.out.println(" Welcome to Lockers.com");
-        System.out.println("This application developed  by Kunta  Jothi Srikar");
+        System.out.println("This application developed  by Kunta Jothi Srikar");
         boolean exit = false;
         while (!exit){
             Scanner sc = new Scanner(System.in);
@@ -68,7 +68,7 @@ public class Assessment {
     public static void updateFile() {
         try {
             Scanner up = new Scanner(System.in);
-            System.out.print("Enter the file name with specific location: ");
+            System.out.print("Enter the file name: ");
             String name = up.nextLine();
             FileOutputStream fos = new FileOutputStream(name, true);
             System.out.print("Enter file content: ");
@@ -128,7 +128,7 @@ public class Assessment {
         Scanner sf = new Scanner(System.in);
         System.out.print("Enter the file name to open : ");
         String name = sf.nextLine();
-        File directory = new File("C:\\Users\\akkim\\IdeaProjects\\Project");
+        File directory = new File("G:\\Eclipse-WorkSpace\\Assessment-1");
         String[] flist = directory.list();
         int flag = 0;
         if (flist == null) {
